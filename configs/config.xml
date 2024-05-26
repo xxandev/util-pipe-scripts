@@ -1,0 +1,19 @@
+<Config>
+    <ScriptsPath>c:\scripts</ScriptsPath>
+    <WikiPath>c:\wiki</WikiPath>
+    <Server>
+        <Host>127.0.0.1:8090</Host>
+        <SSL>
+            <CRT>server.crt</CRT>
+            <Key>server.key</Key>
+        </SSL>
+    </Server>
+    <BasicAuth>
+        <Login>admin</Login>
+        <Pass>qwerty</Pass>
+    </BasicAuth>
+    <LDAP>
+        <URL>ldap://example.com:389</URL>
+        <DN>ou=users,dc=example,dc=com</DN>
+    </LDAP>
+</Config>

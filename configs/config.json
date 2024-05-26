@@ -1,0 +1,19 @@
+{
+    "scripts_path": "c:\\scripts",
+    "wiki_path": "c:\\wiki",
+    "server": {
+        "host": "127.0.0.1:8090",
+        "ssl": {
+            "crt": "server.crt",
+            "key": "server.key"
+        }
+    },
+    "basic_auth": {
+        "login": "admin",
+        "pass": "qwerty"
+    },
+    "ldap": {
+        "url": "ldap://example.com:389",
+        "dn": "ou=users,dc=example,dc=com"
+    }
+}

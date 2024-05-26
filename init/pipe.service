@@ -1,0 +1,16 @@
+[Unit]
+Description=pipe instance
+After=syslog.target 
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/path/to/script/
+ExecStart=/path/to/script/pipe %i
+Restart=always
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
